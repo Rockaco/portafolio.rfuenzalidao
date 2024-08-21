@@ -17,6 +17,28 @@
         <p>Profesional con amplia experiencia en el sector agropecuario, especializado en...</p>
     </section>
 
+    <section id="portfolio">
+        <h2>Proyectos Destacados</h2>
+
+        <!-- Aquí se inserta el código del carrusel -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/portfolio_image1.jpg" alt="Proyecto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/portfolio_image2.jpg" alt="Proyecto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/portfolio_image3.jpg" alt="Proyecto 3">
+                </div>
+                <!-- Añade más items según sea necesario -->
+            </div>
+            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
     <section id="certifications">
         <h2>Certificaciones</h2>
         <ul>
@@ -30,5 +52,26 @@
         <h2>Contacto</h2>
         <p>Para más información, envíame un <a href="mailto:rfuenzalidao@gmail.com">correo electrónico</a>.</p>
     </section>
+
+    <!-- Insertar el script del carrusel al final del cuerpo -->
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+
+            currentIndex += direction;
+
+            if (currentIndex >= totalItems) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = totalItems - 1;
+            }
+
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
 </body>
 </html>
