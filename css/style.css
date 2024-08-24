@@ -154,9 +154,31 @@ body {
 /* Estilo para la galería de imágenes */
 .img-gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column-reverse; /* Alterna el orden de las imágenes y el texto */
+}
+
+.gallery-item:nth-child(even) {
+    flex-direction: column; /* Alterna el orden para las filas pares */
+}
+
+.gallery-item img {
+    max-width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
 }
 
 .img-gallery img {
