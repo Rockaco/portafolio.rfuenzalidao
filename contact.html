@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Mí</a></li>
+            <li><a href="projects.html">Proyectos</a></li>
+            <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        <h1>Contacto</h1>
+        <p>Estoy disponible para consultas y oportunidades de colaboración. No dudes en ponerte en contacto conmigo a través del siguiente formulario o enviándome un correo electrónico directamente a <a href="mailto:rfuenzalidao@gmail.com">rfuenzalidao@gmail.com</a>.</p>
+
+        <!-- Formulario de Contacto -->
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2023 Rodrigo René Fuenzalida Olavarría. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
