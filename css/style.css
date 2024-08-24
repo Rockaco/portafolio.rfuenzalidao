@@ -127,7 +127,8 @@ body {
 .carousel-item img {
     width: 100%;
     height: auto;
-    display: block;
+    max-height: 500px; /* Limitar la altura máxima */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
 
 .carousel-control {
