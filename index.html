@@ -24,9 +24,23 @@
         <p>Este es un sitio web de ejemplo creado con GitHub Pages.</p>
 
         <!-- Carrusel de Imágenes -->
-        <section id="carrusel">
-            <!-- Aquí incluirías tu carrusel de imágenes -->
-        </section>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/portfolio_image1.jpg" alt="Proyecto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/portfolio_image2.jpg" alt="Proyecto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/portfolio_image3.jpg" alt="Proyecto 3">
+                </div>
+                <!-- Añade más items según sea necesario -->
+            </div>
+            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
 
         <!-- Galería de Imágenes -->
         <section id="galeria">
