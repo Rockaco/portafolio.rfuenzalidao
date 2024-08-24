@@ -150,7 +150,7 @@ body {
     right: 10px;
 }
 
-/* Estilo para las imágenes adicionales */
+/* Estilo para la galería de imágenes */
 .img-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -160,8 +160,12 @@ body {
 
 .img-gallery img {
     max-width: 100%;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ajusta el tamaño de las imágenes */
+    width: calc(33% - 20px); /* Tres imágenes por fila */
+    object-fit: cover;
 }
 
 /* Estilo para videos de YouTube */
