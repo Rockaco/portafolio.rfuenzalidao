@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="index.html">Mi Nombre</a>
+                </div>
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="projects.html">Proyectos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Imagen de Cabecera -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Imagen de Cabecera">
+    </section>
+
+    <!-- Sección Principal: Biografía -->
+    <main class="container">
+        <section class="biography">
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="images/profile.jpg" alt="Mi Foto">
+                </div>
+                <div class="bio-text">
+                    <h1>Biografía</h1>
+                    <p>Actualmente estoy trabajando en proyectos que implican la automatización y la mejora de la productividad agrícola...</p>
+                    <p>Mis intereses incluyen la integración de tecnologías modernas en la gestión de cultivos, el análisis de datos y la sostenibilidad ambiental.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secciones Adicionales -->
+        <!-- Carrusel de Imágenes -->
+        <section class="carousel-section">
+            <h2>Proyectos Destacados</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carrusel/imagen1.jpg" alt="Proyecto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrusel/imagen2.jpg" alt="Proyecto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrusel/imagen3.jpg" alt="Proyecto 3">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Galería de Imágenes -->
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="img-gallery">
+                <img src="images/galeria/galeria1.jpg" alt="Imagen 1">
+                <img src="images/galeria/galeria2.jpg" alt="Imagen 2">
+            </div>
+        </section>
+
+        <!-- Video de YouTube -->
+        <section id="videos">
+            <h2>Mi Video de YouTube</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2023 Mi Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
