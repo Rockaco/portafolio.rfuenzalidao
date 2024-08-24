@@ -193,22 +193,26 @@ body {
 
 /* Estilo para videos de YouTube */
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.video-item iframe {
+    width: 300px; /* Ajusta el tamaño del video */
+    height: auto;
+}
+
+.video-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
 }
 
 /* Estilo del pie de página */
