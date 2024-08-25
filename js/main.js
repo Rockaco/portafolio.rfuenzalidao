@@ -20,3 +20,9 @@ function moveSlide(direction) {
     // Añadir la clase "active" a la nueva imagen
     items[currentIndex].classList.add('active');
 }
+
+// Auto slide (Optional)
+// This will automatically change slides every 5 seconds
+setInterval(function() {
+    moveSlide(1);
+}, 5
