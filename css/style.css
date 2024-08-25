@@ -181,15 +181,15 @@ body {
     color: #333;
 }
 
-.img-gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Ajusta el tamaño de las imágenes */
-    width: calc(33% - 20px); /* Tres imágenes por fila */
-    object-fit: cover;
-}
+#.img-gallery img {
+ #   max-width: 100%;
+ #   height: auto;
+ #   border-radius: 5px;
+ #   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#    /* Ajusta el tamaño de las imágenes */
+#    width: calc(33% - 20px); /* Tres imágenes por fila */
+#    object-fit: cover;
+#}
 
 /* Estilo para videos de YouTube */
 .video-container {
